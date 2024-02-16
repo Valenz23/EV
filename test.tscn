@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://biks8m5yyyn5l"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_aslh7"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+current = true
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+light_color = Color(0, 1, 0, 1)
+light_energy = 6.86
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.53303, 0.456224, -3.96446)
+mesh = SubResource("BoxMesh_aslh7")
+skeleton = NodePath("../OmniLight3D")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.59412, -0.186539, -3.82351)
+mesh = SubResource("BoxMesh_aslh7")
+skeleton = NodePath("../OmniLight3D")
