@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://dw1c4hw6msiku"]
+
+[node name="silla" type="Node3D"]
+
+[node name="respaldo" type="Node3D" parent="."]
+transform = Transform3D(-1.96701e-07, 4, 1.31134e-08, 0, -1.74846e-07, 0.3, 4.5, 1.74846e-07, 5.73206e-16, 0.379576, 3.62854, -0.0193999)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="respaldo"]
+transform = Transform3D(-4.85682e-09, 0.666667, -4.85682e-09, 0.125, 3.27835e-08, 5.46392e-09, 7.28523e-08, -4.37114e-07, -1.66667, 0.001228, -0.551353, -0.141893)
+height = 1.48098
+
+[node name="asiento" type="CSGPolygon3D" parent="respaldo"]
+transform = Transform3D(1, -3.55271e-15, -1.32349e-23, -3.55271e-15, 1, 8.88178e-16, 0, 1.13687e-13, 1, 0, 0, 0)
+calculate_tangents = false
+polygon = PackedVector2Array(-0.5, -0.5, -0.5, 0.25, -0.25, 0.5, 0.25, 0.51, 0.5, 0.25, 0.5, -0.5)
+
+[node name="respaldo" type="CSGPolygon3D" parent="respaldo"]
+transform = Transform3D(0.888889, 5.48182e-08, 2.99201e-11, 6.21884e-09, -0.210678, -0.0742566, -5.41908e-07, 19.8018, -0.140452, 2.98023e-08, -0.688492, 9.58007)
+calculate_tangents = false
+polygon = PackedVector2Array(-0.5, -0.5, -0.5, 0.25, -0.25, 0.5, 0.25, 0.51, 0.5, 0.25, 0.5, -0.5)
+
+[node name="base" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.36128, 0)
+
+[node name="base1" type="CSGCylinder3D" parent="base"]
+radius = 0.673825
+height = 0.772903
+
+[node name="base2" type="CSGCylinder3D" parent="base"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09361, 0)
+radius = 0.398969
+height = 1.88073
+
+[node name="rueda1" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="rueda1"]
+transform = Transform3D(0.991841, -0.12748, 0, 0.12748, 0.991841, 0, 0, 0, 1, -1.63782, 0.684514, -0.0145739)
+size = Vector3(3.3949, 0.410645, 0.80481)
+
+[node name="rueda" type="CSGCylinder3D" parent="rueda1"]
+transform = Transform3D(1.91069e-15, -1.31134e-08, 1, -1, -1.31134e-08, 0, 4.37114e-08, -0.3, -4.37114e-08, -2.75195, 0, 0)
+
+[node name="rueda2" type="Node3D" parent="."]
+transform = Transform3D(0.384328, 0, 0.923197, 0, 1, 0, -0.923197, 0, 0.384328, 0, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="rueda2"]
+transform = Transform3D(0.991841, -0.12748, 0, 0.12748, 0.991841, 0, 0, 3.72529e-09, 1, -1.63782, 0.684514, -0.0145739)
+size = Vector3(3.3949, 0.410645, 0.80481)
+
+[node name="rueda" type="CSGCylinder3D" parent="rueda2"]
+transform = Transform3D(1.91069e-15, -1.31134e-08, 1, -1, -1.31134e-08, 0, 4.37114e-08, -0.3, -4.37114e-08, -2.75195, 0, 0)
+
+[node name="rueda3" type="Node3D" parent="."]
+transform = Transform3D(-0.702277, 0, 0.711904, 0, 1, 0, -0.711904, 0, -0.702277, 0, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="rueda3"]
+transform = Transform3D(0.991841, -0.12748, 0, 0.12748, 0.991841, 0, 0, 0, 1, -1.63782, 0.684514, -0.0145739)
+size = Vector3(3.3949, 0.410645, 0.80481)
+
+[node name="rueda" type="CSGCylinder3D" parent="rueda3"]
+transform = Transform3D(1.91069e-15, -1.31134e-08, 1, -1, -1.31134e-08, 0, 4.37114e-08, -0.3, -4.37114e-08, -2.75195, 0, 0)
+
+[node name="rueda4" type="Node3D" parent="."]
+transform = Transform3D(-0.860333, 0, -0.509732, 0, 1, 0, 0.509732, 0, -0.860333, 0, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="rueda4"]
+transform = Transform3D(0.991841, -0.12748, 0, 0.12748, 0.991841, 0, 0, 0, 1, -1.63782, 0.684514, -0.0145739)
+size = Vector3(3.3949, 0.410645, 0.80481)
+
+[node name="rueda" type="CSGCylinder3D" parent="rueda4"]
+transform = Transform3D(1.91069e-15, -1.31134e-08, 1, -1, -1.31134e-08, 0, 4.37114e-08, -0.3, -4.37114e-08, -2.75195, 0, 0)
+
+[node name="rueda5" type="Node3D" parent="."]
+transform = Transform3D(0.285371, 0, -0.958417, 0, 1, 0, 0.958417, 0, 0.285371, 0, 0, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="rueda5"]
+transform = Transform3D(0.991841, -0.12748, 0, 0.12748, 0.991841, 0, 0, 0, 1, -1.63782, 0.684514, -0.0145739)
+size = Vector3(3.3949, 0.410645, 0.80481)
+
+[node name="rueda" type="CSGCylinder3D" parent="rueda5"]
+transform = Transform3D(1.91069e-15, -1.31134e-08, 1, -1, -1.31134e-08, 0, 4.37114e-08, -0.3, -4.37114e-08, -2.75195, 0, 0)
