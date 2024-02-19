@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b17i0i44xswr1"]
+
+[node name="CSGBox3D" type="CSGBox3D"]
+operation = 1
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.367854, 0)
+operation = 2
