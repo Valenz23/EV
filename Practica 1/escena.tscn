@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dhnkbjtc47hkj"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="soporte" type="CSGBox3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 3, 0, 0, 0, 0.5, 0, 1.50808, 0)
+visible = false
+
+[node name="pata1" type="CSGBox3D" parent="soporte"]
+transform = Transform3D(0.819152, 0, 5.73576, 0, 0.166667, 0, -0.573576, 0, 8.19152, 0, -0.502693, 0)
+
+[node name="pata2" type="CSGBox3D" parent="soporte"]
+transform = Transform3D(0.819152, 0, -5.73576, 0, 0.166667, 0, 0.573577, 0, 8.19152, 0, -0.502693, 0)
