@@ -1,13 +1,24 @@
-[gd_scene format=3 uid="uid://dhnkbjtc47hkj"]
+[gd_scene load_steps=3 format=3 uid="uid://dhnkbjtc47hkj"]
+
+[ext_resource type="PackedScene" uid="uid://dy2wbyehus247" path="res://habitacion.tscn" id="1_dltud"]
+[ext_resource type="PackedScene" uid="uid://yjxa6eys0xlb" path="res://silla.tscn" id="2_2ibcg"]
 
 [node name="Node3D" type="Node3D"]
 
-[node name="soporte" type="CSGBox3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 3, 0, 0, 0, 0.5, 0, 1.50808, 0)
-visible = false
+[node name="habitacion" parent="." instance=ExtResource("1_dltud")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 12.4088, 0)
 
-[node name="pata1" type="CSGBox3D" parent="soporte"]
-transform = Transform3D(0.819152, 0, 5.73576, 0, 0.166667, 0, -0.573576, 0, 8.19152, 0, -0.502693, 0)
+[node name="silla" parent="habitacion" instance=ExtResource("2_2ibcg")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, -2.35044, -0.2)
 
-[node name="pata2" type="CSGBox3D" parent="soporte"]
-transform = Transform3D(0.819152, 0, -5.73576, 0, 0.166667, 0, 0.573577, 0, 8.19152, 0, -0.502693, 0)
+[node name="silla2" parent="habitacion" instance=ExtResource("2_2ibcg")]
+transform = Transform3D(0.146611, 0, 0.136034, 0, 0.2, 0, -0.136034, 0, 0.146611, -1.40473, -2.35044, 3.30997)
+
+[node name="silla3" parent="habitacion" instance=ExtResource("2_2ibcg")]
+transform = Transform3D(-0.158396, 0, 0.122109, 0, 0.2, 0, -0.122109, 0, -0.158396, 2.3555, -2.35044, 1.06588)
+
+[node name="silla4" parent="habitacion" instance=ExtResource("2_2ibcg")]
+transform = Transform3D(-0.173593, 0, -0.0993251, 0, 0.2, 0, 0.0993251, 0, -0.173593, 2.07339, -2.35044, -2.95009)
+
+[node name="silla5" parent="habitacion" instance=ExtResource("2_2ibcg")]
+transform = Transform3D(0.107781, 0, 0.168474, 0, 0.2, 0, -0.168474, 0, 0.107781, -1.8946, -2.35044, -2.14077)
