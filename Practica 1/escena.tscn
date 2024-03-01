@@ -98,7 +98,6 @@ size = Vector3(6.65527, 1.5, 2)
 transform = Transform3D(0.90254, 0, -0.430606, 0, 1, 0, 0.430606, 0, 0.90254, -2.16885, 1.14179, 0)
 
 [node name="frigo" parent="habitacion2/mueble" instance=ExtResource("6_mhqwc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.73913, 1.34896, 0.00161791)
 
 [node name="hueco2" type="CSGBox3D" parent="habitacion2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.42145, -1.23091, -3.24088)
