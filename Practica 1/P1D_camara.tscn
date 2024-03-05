@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://7ytcj2qy257w"]
+
+[ext_resource type="Script" path="res://rotacio.gd" id="1_2n4ol"]
+
+[node name="camara" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.08869, 0)
+script = ExtResource("1_2n4ol")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10, 0, 0)
