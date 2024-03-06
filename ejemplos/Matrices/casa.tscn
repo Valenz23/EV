@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://dx5v1d51s6u5j"]
+
+[ext_resource type="Script" path="res://Base.gd" id="1_0o1dn"]
+[ext_resource type="Script" path="res://Label.gd" id="1_2jf3k"]
+[ext_resource type="Script" path="res://Tejado.gd" id="2_33ydd"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_yp36l"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_lfx4m"]
+
+[node name="Casa" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.896316, 0, 0.443415, 0, 1, 0, -0.443415, 0, 0.896316, 1.50272, 0, 2.13453)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.85744, 0)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 728.0
+offset_top = 408.0
+offset_right = 1141.0
+offset_bottom = 633.0
+text = "Esto es un texto."
+autowrap_mode = 3
+script = ExtResource("1_2jf3k")
+
+[node name="Base" type="MeshInstance3D" parent="Label"]
+mesh = SubResource("BoxMesh_yp36l")
+skeleton = NodePath("../..")
+script = ExtResource("1_0o1dn")
+
+[node name="Tejado" type="MeshInstance3D" parent="Label/Base"]
+mesh = SubResource("PrismMesh_lfx4m")
+skeleton = NodePath("../../..")
+script = ExtResource("2_33ydd")

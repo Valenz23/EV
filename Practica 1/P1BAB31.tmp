@@ -30,4 +30,4 @@ transform = Transform3D(-0.173593, 0, -0.0993251, 0, 0.2, 0, 0.0993251, 0, -0.17
 transform = Transform3D(0.107781, 0, 0.168474, 0, 0.2, 0, -0.168474, 0, 0.107781, -1.8946, -2.35044, -2.14077)
 
 [node name="camara" parent="." instance=ExtResource("3_l63f5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.947145, 3.81611, -1.07364)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.872336, 3.81611, 0)
